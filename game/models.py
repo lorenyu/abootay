@@ -2,10 +2,10 @@ from django.db import models
 
 class Card(models.Model):
     phrase = models.CharField(max_length=256,primary_key=True)
-    tabooWordOne = models.CharField(max_length=64)
-    tabooWordTwo = models.CharField(max_length=64)
-    tabooWordThree = models.CharField(max_length=64)
-    tabooWordFour = models.CharField(max_length=64)
+    abootayWordOne = models.CharField(max_length=64)
+    abootayWordTwo = models.CharField(max_length=64)
+    abootayWordThree = models.CharField(max_length=64)
+    abootayWordFour = models.CharField(max_length=64)
     difficultyLevel = models.IntegerField(null=True)
 
     @property

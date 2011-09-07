@@ -1,9 +1,0 @@
-{% if cards %}
-    <ul>
-    {% for card in cards %}
-        <li><a href="/cards/{{ card.id }}/">{{ card.phrase }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No cards are available.</p>
-{% endif %}

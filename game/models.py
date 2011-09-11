@@ -4,7 +4,7 @@ class Card(models.Model):
     # Card will have a field called id, which is an auto-incrementing
     # primary key
     deck = models.ForeignKey('Deck', related_name = 'cards')
-    phrase = models.CharField(max_length=256,primary_key=True)
+    phrase = models.CharField(max_length=256)
     abootayWordOne = models.CharField(max_length=64)
     abootayWordTwo = models.CharField(max_length=64)
     abootayWordThree = models.CharField(max_length=64)
@@ -22,6 +22,5 @@ class Deck( models.Model ):
     # primary key
     # Deck will also have a field called 'cards' by virtue of the ForeignKey
     # relationship with the Card class setup above
-    pass
-
+    title = models.CharField( max_length=256, unique=True )
     

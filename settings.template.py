@@ -1,5 +1,8 @@
 # Django settings for abootay project.
 
+# Load environment-specific settings
+from config import db # Database settings
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -19,6 +22,8 @@ DATABASES = {
         'PORT': '@db_port@',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
+
+db.configure(DATABASES)
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name

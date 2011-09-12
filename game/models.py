@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Card(models.Model):
     # Card will have a field called id, which is an auto-incrementing
     # primary key

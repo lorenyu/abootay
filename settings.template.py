@@ -1,7 +1,7 @@
 # Django settings for abootay project.
 
 # Load environment-specific settings
-from config import db # Database settings
+from config import * # Database settings
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG

@@ -6,6 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     ('^$', 'game.views.index'),
+    ('^play$', 'game.views.play'),
 
     # Example:
     # (r'^abootay/', include('abootay.foo.urls')),

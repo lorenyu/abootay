@@ -1,6 +1,9 @@
 from django.shortcuts import render_to_response
 from game.models import Card
 
+def play(request):
+    return render_to_response('play.html')
+
 def index(request):
     return render_to_response('index.html')
 

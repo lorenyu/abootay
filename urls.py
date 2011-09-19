@@ -2,6 +2,7 @@ from django.conf.urls.defaults import *
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
+from config import staticfiles
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -18,4 +19,7 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     
     # (r'^polls/(?P<poll_id>\d+)/$', 'polls.views.detail'),
+    
+    # static files (for development environment only. On production, nginx has its own rules)
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': staticfiles.path() })
 )

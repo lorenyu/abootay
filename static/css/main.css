@@ -11,8 +11,8 @@ blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 blockquote, q { quotes: "" ""; }
 /* end reset CSS */
 
-body { font-family:Helvetica, Arial, Verdana, sans-serif; width: 100%; -webkit-text-size-adjust:none; }
-.outer-container { width: 100%; }
+body { font-family:Helvetica, Arial, Verdana, sans-serif; -webkit-text-size-adjust:none; }
+.outer-container { }
 h1 { font-size: 48px; }
 .play-btn { background: #CCC; border-radius: 5px; color: black; display: block; font-size: 22px; font-weight: bold; padding: 6px 12px; text-decoration: none; }
 .play-btn:hover { background: #666; color: #fff; }

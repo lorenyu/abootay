@@ -10,3 +10,4 @@ Random tips:
 2. To start the development server on your laptop, run python manage.py runserver. Now, from your laptop's browser if you go to http://localhost/<yoursitefullpath> you should see your django stuff.
 3. To create a new subdirectory under abootay ( in Django terms, an 'app' ) run python manage.py startapp <app>. I've done one for helloWorld.
 4. For conflicts, do git stash, git pull, git stash apply
+5. git status shows you the status of the checked out files etc

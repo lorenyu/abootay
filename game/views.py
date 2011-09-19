@@ -1,8 +1,11 @@
 from django.shortcuts import render_to_response
-from game.models import Card
+from game.models import Card, Deck
+from django.core import serializers
 
 def play(request):
-    return render_to_response('play.html')
+    cards = Card.objects.all()
+    cardsjson = serializers.get_serializer("json")().serialize( cards, ensure_ascii=False )
+    return render_to_response('play.html', { 'cardsjson' : cardsjson } )
 
 def index(request):
     return render_to_response('index.html')

@@ -15,3 +15,6 @@ body { font-family: arial; }
 h1 { font-size: 48px; }
 .play-btn { background: #CCC; border-radius: 5px; color: black; display: block; font-size: 22px; font-weight: bold; padding: 6px 12px; text-decoration: none; }
 .play-btn:hover { background: #666; color: #fff; }
+
+button.start { background: background: #CCC; border-radius: 5px; border-width: 0; color: black; display: block; font-size: 22px; font-weight: bold; padding: 6px 12px; text-decoration: none; }
+button.start:hover { background: #666; color: #fff; }
